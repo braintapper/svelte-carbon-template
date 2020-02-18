@@ -4,9 +4,13 @@
   import OverflowMenuVertical16 from '../../components/carbon/icons/lib/OverflowMenuVertical16';
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import { cx } from '../../components/carbon/lib';
-  
+
   import Button from '../../components/carbon/components/Button/Button.svelte';
   import Tooltip from '../../components/carbon/components/Tooltip/Tooltip.svelte';
+  import TooltipDefinition from '../../components/carbon/components/TooltipDefinition/TooltipDefinition.svelte';
+
+  import Filter16 from '../../components/carbon/icons/lib/Filter16';
+  import TooltipIcon from '../../components/carbon/components/TooltipIcon/TooltipIcon.svelte';
 
   let open = story === 'uncontrolled';
 </script>
@@ -21,8 +25,9 @@
 </style>
 
 <Layout>
+  <h1>Tooltip</h1>
   <div style="margin: 3rem">
-    {#if story === 'custom icon'}
+    <h2>Custom Icon</h2>
       <Tooltip
         {...$$props}
         bind:open
@@ -38,11 +43,11 @@
           inside. If more room is needed please use a modal instead.
         </p>
         <div class={cx('--tooltip__footer')}>
-          <Link href="/">Learn More</Link>
+          <a href="/">Learn More</a>
           <Button size="small">Create</Button>
         </div>
       </Tooltip>
-    {:else if story === 'uncontrolled'}
+    <h2>Uncontrolled</h2>
       <Button
         style="padding: 15px 20px; margin: 4px 20px"
         on:click={() => {
@@ -63,7 +68,7 @@
           Tooltip content
         </Tooltip>
       </div>
-    {:else}
+    <h2>Regular</h2>
       <Tooltip
         {...$$props}
         bind:open
@@ -83,6 +88,14 @@
           <Button size="small">Create</Button>
         </div>
       </Tooltip>
-    {/if}
+
   </div>
+  <h1>Tooltip Definition</h1>
+  <TooltipDefinition {...$$props}>Defintion Tooltip</TooltipDefinition>
+  <h1>Tooltip Icon</h1>
+    <div>
+      <TooltipIcon {...$$props}>
+        <Filter16 />
+      </TooltipIcon>
+    </div>
 </Layout>

@@ -11,7 +11,7 @@
 
   import { getContext } from 'svelte';
   import { cx } from '../../lib';
-  import Button from '../Button';
+  import Button from '../Button/Button.svelte';
 
   const { closeModal, submit } = getContext('ComposedModal');
 </script>

@@ -29,7 +29,7 @@
   import { afterUpdate, setContext } from 'svelte';
   import WarningFilled16 from '../../icons/lib/WarningFilled16';
   import { cx } from '../../lib';
-  import Checkbox from '../Checkbox';
+  import Checkbox from '../Checkbox/Checkbox.svelte';
   import ListBox, {
     ListBoxField,
     ListBoxMenu,

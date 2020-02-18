@@ -8,22 +8,12 @@
   export let tabindex = undefined;
   export let title = undefined;
 
-  import IconSkeleton from './Icon.Skeleton.svelte';
+
 
   $: iconName = render.toString().split(' ')[1];
   $: size = parseInt(iconName.slice(-2), 10);
 </script>
 
-{#if skeleton}
-  <IconSkeleton
-    on:click
-    on:mouseover
-    on:mouseenter
-    on:mouseleave
-    class={className}
-    {style}
-    {size} />
-{:else}
   <svelte:component
     this={render}
     aria-label={$$props['aria-label']}
@@ -37,4 +27,3 @@
     {focusable}
     {style}
     {title} />
-{/if}

@@ -4,7 +4,7 @@
   export let style = undefined;
 
   import { cx } from '../../lib';
-  import Button from '../Button';
+  import Button from '../Button/Button.svelte';
 </script>
 
 <Button

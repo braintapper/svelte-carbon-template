@@ -11,7 +11,7 @@
   import CheckmarkFilled16 from '../../icons/lib/CheckmarkFilled16';
   import WarningFilled16 from '../../icons/lib/WarningFilled16';
   import { cx } from '../../lib';
-  import Loading from '../Loading';
+  import Loading from '../Loading/Loading.svelte';
 </script>
 
 {#if status === 'uploading'}

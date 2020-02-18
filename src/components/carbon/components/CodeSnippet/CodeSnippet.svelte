@@ -17,10 +17,10 @@
   import { afterUpdate } from 'svelte';
   import ChevronDown16 from '../../icons/lib/ChevronDown16';
   import { cx } from '../../lib';
-  import Button from '../Button';
-  import Copy from '../Copy';
-  import CopyButton from '../CopyButton';
-  import CodeSnippetSkeleton from './CodeSnippet.Skeleton.svelte';
+  import Button from '../Button/Button.svelte';
+  import Copy from '../Copy/Copy.svelte';
+  import CopyButton from '../CopyButton/CopyButton.svelte';
+
 
   let codeRef = undefined;
   let expanded = false;
@@ -35,11 +35,7 @@
   $: expandText = expanded ? showLessText : showMoreText;
 </script>
 
-{#if skeleton}
-  <CodeSnippetSkeleton class={className} {type} {style} />
-{/if}
 
-{#if !skeleton}
   {#if type === 'inline'}
     <Copy
       aria-label={$$props['aria-label'] || copyLabel}
@@ -96,4 +92,3 @@
       {/if}
     </div>
   {/if}
-{/if}

@@ -21,7 +21,8 @@
   import CaretLeft24 from '../../icons/lib/CaretLeft24';
   import CaretRight24 from '../../icons/lib/CaretRight24';
   import { cx, fillArray } from '../../lib';
-  import Select, { SelectItem } from '../Select';
+  import Select from '../Select/Select.svelte';
+  import SelectItem from '../Select/SelectItem.svelte';
 
   $: totalPages = Math.max(Math.ceil(totalItems / pageSize), 1);
   $: selectItems = fillArray(totalPages);

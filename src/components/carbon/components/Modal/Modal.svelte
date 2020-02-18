@@ -22,7 +22,7 @@
   import { createEventDispatcher, afterUpdate, onDestroy } from 'svelte';
   import Close20 from '../../icons/lib/Close20';
   import { cx } from '../../lib';
-  import Button from '../Button';
+  import Button from '../Button/Button.svelte';
 
   const dispatch = createEventDispatcher();
 
