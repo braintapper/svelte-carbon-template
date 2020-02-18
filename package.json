@@ -9,11 +9,24 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "coffeescript": "^2.4.1",
+    "gulp": "^4.0.2",
+    "gulp-coffee": "^3.0.3",
+    "gulp-sass": "^4.0.2",
+    "js-cookie": "^2.2.1",    
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.23",
+    "pug": "^2.0.4",
     "rollup": "^1.20.0",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0"
+    "sugar": "^2.0.6",
+    "sugar-inflections": "^2.0.6",
+    "sugar-language": "^2.0.6",
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.1.2",
+    "svelte-spa-router": "^2.0.0",
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"
