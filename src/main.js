@@ -1,9 +1,11 @@
-import App from './App.svelte';
+import App from "./App.svelte";
+import Sugar from "Sugar";
+Sugar.extend();
 
 const app = new App({
 	target: document.body,
 	props: {
-		name: 'world'
+		application_name: "Carbon Template"
 	}
 });
 

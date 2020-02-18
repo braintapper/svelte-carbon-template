@@ -14,6 +14,12 @@
 * Svelte
 
 
+## Carbon Information
+
+
+* https://github.com/IBM/carbon-icons-svelte
+
+
 ## Installation
 
 ```bash

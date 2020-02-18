@@ -2,7 +2,7 @@ gulp   = require('gulp')
 sass = require ('gulp-sass')
 
 watchPath = ["src/_sass/**/*.sass"]
-sourcePath = ["src/_sass/**/*.sass"]
+sourcePath = ["src/_sass/global.sass"]
 destinationPath = "./public/css"
 
 module.exports = ()->
