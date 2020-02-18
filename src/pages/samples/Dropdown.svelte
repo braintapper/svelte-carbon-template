@@ -2,9 +2,9 @@
   export let story = undefined;
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
-  import Button from '../../components/carbon/components/Button';
+  import Button from '../../components/carbon/components/Button/Button.svelte';
   import Dropdown from '../../components/carbon/components/Dropdown/Dropdown.svelte';
-  import DropdownSkeleton from '../../components/carbon/components/Dropdown/Dropdown.Skeleton.svelte';
+
 
   let items = [
     { id: 'option-0', text: 'Option 1' },
@@ -18,13 +18,7 @@
 
 <Layout>
 
-  {#if story === 'skeleton'}
-    <div style="width: 300px">
-      <DropdownSkeleton />
-      &nbsp;
-      <DropdownSkeleton inline />
-    </div>
-  {:else}
+  <h1>Dropdown</h1>
     <p>Currently, this component does not support items as slots.</p>
     <p>
       <code>items</code>
@@ -45,5 +39,5 @@
     <div style="width: 300px">
       <Dropdown {...$$props} bind:selectedIndex {items} />
     </div>
-  {/if}
+
 </Layout>

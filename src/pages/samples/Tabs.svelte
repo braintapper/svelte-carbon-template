@@ -5,7 +5,7 @@
   import Tab from '../../components/carbon/components/Tabs/Tab.svelte';
   import TabContent from '../../components/carbon/components/Tabs/TabContent.svelte';
   import Tabs from '../../components/carbon/components/Tabs/Tabs.svelte';
-  import TabsSkeleton from '../../components/carbon/components/Tabs/TabsSkeleton.svelte';
+
 
   const { tabProps, ...tabsProps } = $$props;
 
@@ -13,9 +13,7 @@
 </script>
 
 <Layout>
-  {#if story === 'skeleton'}
-    <TabsSkeleton />
-  {:else if story === 'container'}
+  <h1>Container</h1>
     <Tabs {...tabsProps} type="container" bind:selected>
       <Tab {...tabProps} label="Tab label 1" />
       <Tab {...tabProps} label="Tab label 2" />
@@ -26,7 +24,7 @@
         <TabContent>Content 3</TabContent>
       </div>
     </Tabs>
-  {:else}
+  <h1>Regular</h1>
     <Tabs {...tabsProps} bind:selected>
       <Tab {...tabProps} label="Tab label 1" />
       <Tab {...tabProps} label="Tab label 2" />
@@ -39,5 +37,5 @@
         <TabContent>Content 4</TabContent>
       </div>
     </Tabs>
-  {/if}
+  
 </Layout>

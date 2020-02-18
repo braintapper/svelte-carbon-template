@@ -3,7 +3,7 @@
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import ToggleSmall from '../../components/carbon/components/ToggleSmall/ToggleSmall.svelte';
-  import ToggleSmallSkeleton from '../../components/carbon/components/ToggleSmall/ToggleSmall.Skeleton.svelte';
+
 
   let toggled = true;
 
@@ -13,11 +13,9 @@
 </script>
 
 <Layout>
-  {#if story === 'toggled'}
+  <h1>Toggled</h1>
     <ToggleSmall {...$$props} id="toggle-1" bind:toggled />
-  {:else if story === 'skeleton'}
-    <ToggleSmallSkeleton />
-  {:else}
+    <h1>Regular</h1>
     <ToggleSmall {...$$props} id="toggle-1" />
-  {/if}
+
 </Layout>

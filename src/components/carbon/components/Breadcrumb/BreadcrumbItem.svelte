@@ -6,7 +6,7 @@
   export let style = undefined;
 
   import { cx } from '../../lib';
-  import Link from '../Link';
+
 
   $: ariaCurrent = $$props['aria-current'];
 </script>
@@ -19,9 +19,9 @@
   class={cx('--breadcrumb-item', isCurrentPage && ariaCurrent !== 'page' && '--breadcrumb-item--current', className)}
   {style}>
   {#if href}
-    <Link {href} aria-current={ariaCurrent}>
+    <a {href} aria-current={ariaCurrent}>
       <slot />
-    </Link>
+    </a>
   {:else}
     <slot props={{ 'aria-current': ariaCurrent, class: cx('--link') }} />
   {/if}

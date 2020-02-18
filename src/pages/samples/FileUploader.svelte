@@ -3,12 +3,12 @@
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import { cx } from '../../components/carbon/lib';
-  import Button from '../../components/carbon/components/Button';
+  import Button from '../../components/carbon/components/Button/Button.svelte';
   import FileUploader from '../../components/carbon/components/FileUploader/FileUploader.svelte';
   import FileUploaderButton from '../../components/carbon/components/FileUploader/FileUploaderButton.svelte';
   import FileUploaderDropContainer from '../../components/carbon/components/FileUploader/FileUploaderDropContainer.svelte';
   import FileUploaderItem from '../../components/carbon/components/FileUploader/FileUploaderItem.svelte';
-  import FileUploaderSkeleton from '../../components/carbon/components/FileUploader/FileUploader.Skeleton.svelte';
+
 
   let fileUploader = undefined;
   let files = [];
@@ -18,15 +18,15 @@
 
 <Layout>
   <div>
-    {#if story === 'button'}
+    <h1>Button</h1>
       <FileUploaderButton {...$$props} />
-    {:else if story === 'drop container'}
+    <h1>Drop Container</h1>
       <FileUploaderDropContainer
         {...$$props}
         on:add={({ detail }) => {
           console.log(detail);
         }} />
-    {:else if story === 'item'}
+    <h1>Item</h1>
       <FileUploaderItem
         {...$$props}
         on:delete={({ detail }) => {
@@ -35,7 +35,7 @@
         on:click={() => {
           console.log('click');
         }} />
-    {:else if story === 'uploader'}
+    <h1>Uploader</h1>
       <div class={cx('--file__container')}>
         <FileUploader
           bind:this={fileUploader}
@@ -56,10 +56,6 @@
           Clear File{files.length === 1 ? '' : 's'}
         </Button>
       </div>
-    {:else if story === 'skeleton'}
-      <div style="width: 500px">
-        <FileUploaderSkeleton />
-      </div>
-    {/if}
+
   </div>
 </Layout>

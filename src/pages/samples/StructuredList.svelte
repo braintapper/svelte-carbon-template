@@ -9,7 +9,7 @@
   import StructuredListHead from '../../components/carbon/components/StructuredList/StructuredListHead.svelte';
   import StructuredListInput from '../../components/carbon/components/StructuredList/StructuredListInput.svelte';
   import StructuredListRow from '../../components/carbon/components/StructuredList/StructuredListRow.svelte';
-  import StructuredListSkeleton from '../../components/carbon/components/StructuredList/StructuredList.Skeleton.svelte';
+
   import StructuredList from '../../components/carbon/components/StructuredList/StructuredList.svelte';
 
   let selected = 'row-1-value';
@@ -17,11 +17,7 @@
 
 <Layout>
   <div>
-    {#if story === 'skeleton'}
-      <div style="width: 800px">
-        <StructuredListSkeleton />
-      </div>
-    {:else if story === 'selection'}
+    <h1>Selection</h1>
       <StructuredList selection border bind:selected>
         <StructuredListHead>
           <StructuredListRow head>
@@ -56,7 +52,7 @@
           {/each}
         </StructuredListBody>
       </StructuredList>
-    {:else}
+    <h1>Regular</h1>
       <StructuredList>
         <StructuredListHead>
           <StructuredListRow head>
@@ -86,6 +82,6 @@
           </StructuredListRow>
         </StructuredListBody>
       </StructuredList>
-    {/if}
+
   </div>
 </Layout>

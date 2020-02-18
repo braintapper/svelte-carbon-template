@@ -28,7 +28,7 @@
   import FormLabel from './pages/samples/FormLabel.svelte'
   import Icon from './pages/samples/Icon.svelte'
   import InlineLoading from './pages/samples/InlineLoading.svelte'
-  import Link from './pages/samples/Link.svelte'
+  #import Link from './pages/samples/Link.svelte'
   #import ListBox from './pages/samples/ListBox.svelte'
   #import ListItem from './pages/samples/ListItem.svelte'
   import Loading from './pages/samples/Loading.svelte'
@@ -86,7 +86,7 @@
     '/FormLabel': FormLabel
     '/Icon': Icon
     '/InlineLoading': InlineLoading
-    '/Link': Link
+    #'/Link': Link
     #'/ListBox': ListBox
     #'/ListItem': ListItem
     '/Loading': Loading
@@ -117,7 +117,7 @@
     '/TooltipDefinition': TooltipDefinition
     '/TooltipIcon': TooltipIcon
     '/UIShell': UIShell
-    
+
 
 </script>
 

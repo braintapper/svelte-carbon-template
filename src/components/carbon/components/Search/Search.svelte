@@ -18,23 +18,12 @@
   import Close20 from '../../icons/lib/Close20';
   import Search16 from '../../icons/lib/Search16';
   import { cx } from '../../lib';
-  import SearchSkeleton from './Search.Skeleton.svelte';
+
 
   let inputRef = undefined;
 </script>
 
-{#if skeleton}
-  <SearchSkeleton
-    on:click
-    on:mouseover
-    on:mouseenter
-    on:mouseleave
-    class={className}
-    {style}
-    {small} />
-{/if}
 
-{#if !skeleton}
   <div
     class={cx('--search', size && `--search--${size}`, light && '--search--light', className)}
     {style}>
@@ -67,4 +56,3 @@
       <svelte:component this={size === 'xl' ? Close20 : Close16} />
     </button>
   </div>
-{/if}

@@ -4,7 +4,7 @@
   import OverflowMenuVertical16 from '../../components/carbon/icons/lib/OverflowMenuVertical16';
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import { cx } from '../../components/carbon/lib';
-  import Link from '../../components/carbon/components/Link/Link.svelte';
+  
   import Button from '../../components/carbon/components/Button/Button.svelte';
   import Tooltip from '../../components/carbon/components/Tooltip/Tooltip.svelte';
 
@@ -79,7 +79,7 @@
           inside. If more room is needed please use a modal instead.
         </p>
         <div class={cx('--tooltip__footer')}>
-          <Link href="/">Learn More</Link>
+          <a href="/">Learn More</a>
           <Button size="small">Create</Button>
         </div>
       </Tooltip>

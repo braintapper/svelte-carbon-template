@@ -25,6 +25,7 @@ Where useful, new icons will be added.
 
 ### Removed Components
 
+* Link
 * Ordered List
 * Unordered List
 

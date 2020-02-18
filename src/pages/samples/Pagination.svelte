@@ -3,18 +3,16 @@
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import Pagination from '../../components/carbon/components/Pagination/Pagination.svelte';
-  import PaginationSkeleton from '../../components/carbon/components/Pagination/Pagination.Skeleton.svelte';
+
 </script>
 
 <Layout>
   <div style="width: 800px;">
-    {#if story === 'multiple'}
+    <h1>Multiple</h1>
       <Pagination {...$$props}>Pagination</Pagination>
       <Pagination {...$$props}>Pagination</Pagination>
-    {:else if story === 'skeleton'}
-      <PaginationSkeleton />
-    {:else}
+    <h1>Single</h1>
       <Pagination {...$$props}>Pagination</Pagination>
-    {/if}
+    
   </div>
 </Layout>

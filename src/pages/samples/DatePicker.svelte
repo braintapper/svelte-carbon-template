@@ -4,7 +4,7 @@
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import DatePicker from '../../components/carbon/components/DatePicker/DatePicker.svelte';
   import DatePickerInput from '../../components/carbon/components/DatePicker/DatePickerInput.svelte';
-  import DatePickerSkeleton from '../../components/carbon/components/DatePicker/DatePicker.Skeleton.svelte';
+  
 
   let datePickerType = 'simple';
   let value = '';

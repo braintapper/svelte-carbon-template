@@ -11,7 +11,7 @@
   import CheckmarkFilled16 from '../../icons/lib/CheckmarkFilled16';
   import Error20 from '../../icons/lib/Error20';
   import { cx } from '../../lib';
-  import Loading from '../Loading';
+  import Loading from '../Loading/Loading.svelte';
 
   const dispatch = createEventDispatcher();
 

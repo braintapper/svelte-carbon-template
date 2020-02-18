@@ -7,17 +7,15 @@
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import Tag from '../../components/carbon/components/Tag/Tag.svelte';
-  import TagSkeleton from '../../components/carbon/components/Tag/Tag.Skeleton.svelte';
+
 </script>
 
 <Layout>
   <div>
-    {#if story === 'filter'}
+    <h1>Filter</h1>
       <Tag {filter}>{slot}</Tag>
-    {:else if story === 'skeleton'}
-      <TagSkeleton />
-    {:else}
+    <h1>Regular</h1>
       <Tag {disabled} {type}>{slot}</Tag>
-    {/if}
+    
   </div>
 </Layout>

@@ -3,7 +3,7 @@
   const { modalBody } = $$props;
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
-  import Button from '../../components/carbon/components/Button';
+  import Button from '../../components/carbon/components/Button/Button.svelte';
   import ComposedModal from '../../components/carbon/components/ComposedModal/ComposedModal.svelte';
   import ModalHeader from '../../components/carbon/components/ComposedModal/ModalHeader.svelte';
   import ModalBody from '../../components/carbon/components/ComposedModal/ModalBody.svelte';

@@ -4,16 +4,11 @@
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import CodeSnippet from '../../components/carbon/components/CodeSnippet/CodeSnippet.svelte';
-  import CodeSnippetSkeleton from '../../components/carbon/components/CodeSnippet/CodeSnippet.Skeleton.svelte';
+
 </script>
 
 <Layout>
   <div>
-    <h1>Skeleton</h1>
-      <div style="width: 800px">
-        <CodeSnippetSkeleton type="single" style="margin-bottom: 8px" />
-        <CodeSnippetSkeleton type="multi" />
-      </div>
     <h1>Inline</h1>
       <CodeSnippet type="inline" {light} {feedback} {copyLabel}>{'node -v'}</CodeSnippet>
     <h1>Single Line</h1>

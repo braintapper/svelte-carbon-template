@@ -4,22 +4,17 @@
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import PasswordInput from '../../components/carbon/components/TextInput/PasswordInput.svelte';
   import TextInput from '../../components/carbon/components/TextInput/TextInput.svelte';
-  import TextInputSkeleton from '../../components/carbon/components/TextInput/TextInput.Skeleton.svelte';
+
 
   let value = '';
   let type = 'password';
 </script>
 
 <Layout>
-  {#if story === 'skeleton'}
-    <div aria-label="loading text input" aria-live="assertive" role="status" tabindex="0">
-      <TextInputSkeleton />
-      <br />
-      <TextInputSkeleton hideLabel />
-    </div>
-  {:else if story === 'password-visibility'}
+  <h1>Password Visibility</h1>
+
     <PasswordInput {...$$props} aria-level="" />
-  {:else if story === 'controlled'}
+  <h1>Password Controlled</h1>
     <PasswordInput {...$$props} {type} />
     <div>
       <button
@@ -35,12 +30,12 @@
         Hide password
       </button>
     </div>
-  {:else}
+  <h1>Regular</h1>
     <TextInput
       {...$$props}
       bind:value
       on:change={() => {
         console.log('change');
       }} />
-  {/if}
+  
 </Layout>

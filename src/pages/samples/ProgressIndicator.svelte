@@ -3,15 +3,14 @@
 
   import Layout from '../../components/carbon/internal/ui/Layout.svelte';
   import ProgressIndicator from '../../components/carbon/components/ProgressIndicator/ProgressIndicator.svelte';
-  import ProgressIndicatorSkeleton from '../../components/carbon/components/ProgressIndicator/ProgressIndicator.Skeleton.svelte';
+
   import ProgressStep from '../../components/carbon/components/ProgressIndicator/ProgressStep.svelte';
 </script>
 
 <Layout>
   <div>
-    {#if story === 'skeleton'}
-      <ProgressIndicatorSkeleton {...$$props} />
-    {:else if story === 'interactive'}
+
+    <h1>Interactive</h1>
       <ProgressIndicator {...$$props}>
         <ProgressStep description="Step 1: Register a onChange event" let:props>
           <div {...props}>Click me</div>
@@ -23,7 +22,7 @@
           label="Tooltip and really long label"
           description="The progress indicator will listen for clicks on the steps" />
       </ProgressIndicator>
-    {:else}
+    <h1>Regular</h1>
       <ProgressIndicator {...$$props}>
         <ProgressStep
           label="First step"
@@ -46,6 +45,6 @@
           description="Step 5: Getting started with Carbon Design System"
           disabled />
       </ProgressIndicator>
-    {/if}
+    
   </div>
 </Layout>
