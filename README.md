@@ -7,7 +7,6 @@
 * Pug
 * Sass
 * Svelte SPA Router
-* IBM Carbon Components
 * Gulp
 * Sugar
 * Svelte Preprocess
@@ -16,8 +15,14 @@
 
 ## Carbon Information
 
+This template does not use the npm for the carbon svelte library from IBM. Instead, it has the components in the `/src/components/carbon` folder instead.
 
-* https://github.com/IBM/carbon-icons-svelte
+The reason for this is that there are going to be inevitable bugs and customizations required for your app, and there's no point in waiting for updates when they can be easily fixed on your own.
+
+The components have been curated to remove unnecessary items (i.e., skeletons and stories), or to improve stylings where required.
+
+Where useful, new icons will be added.
+
 
 
 ## Installation

@@ -9,7 +9,6 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
-    "carbon-components-svelte": "^0.3.2",
     "coffeescript": "^2.4.1",
     "gulp": "^4.0.2",
     "gulp-coffee": "^3.0.3",
@@ -30,6 +29,7 @@
     "svelte-spa-router": "^2.0.0"
   },
   "dependencies": {
+    "flatpickr": "^4.6.3",
     "sirv-cli": "^0.4.4"
   }
 }

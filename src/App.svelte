@@ -2,7 +2,7 @@
   `export let application_name`
 
   import Router from 'svelte-spa-router'
-  import Navigator from "./components/Navigator.svelte"
+
 
   # Route pages
   import Home from './pages/home/Home.svelte'
@@ -12,15 +12,13 @@
   import Button from './pages/samples/Button.svelte'
   import Checkbox from './pages/samples/Checkbox.svelte'
   import CodeSnippet from './pages/samples/CodeSnippet.svelte'
-
-
   import ComboBox from './pages/samples/ComboBox.svelte'
   import ComposedModal from './pages/samples/ComposedModal.svelte'
   import ContentSwitcher from './pages/samples/ContentSwitcher.svelte'
   import Copy from './pages/samples/Copy.svelte'
   import CopyButton from './pages/samples/CopyButton.svelte'
   import DataTable from './pages/samples/DataTable.svelte'
-  import DataTableSkeleton from './pages/samples/DataTableSkeleton.svelte'
+
   import DatePicker from './pages/samples/DatePicker.svelte'
   import Dropdown from './pages/samples/Dropdown.svelte'
   import FileUploader from './pages/samples/FileUploader.svelte'
@@ -31,8 +29,8 @@
   import Icon from './pages/samples/Icon.svelte'
   import InlineLoading from './pages/samples/InlineLoading.svelte'
   import Link from './pages/samples/Link.svelte'
-  import ListBox from './pages/samples/ListBox.svelte'
-  import ListItem from './pages/samples/ListItem.svelte'
+  #import ListBox from './pages/samples/ListBox.svelte'
+  #import ListItem from './pages/samples/ListItem.svelte'
   import Loading from './pages/samples/Loading.svelte'
   import Modal from './pages/samples/Modal.svelte'
   import MultiSelect from './pages/samples/MultiSelect.svelte'
@@ -46,8 +44,7 @@
   import RadioButtonGroup from './pages/samples/RadioButtonGroup.svelte'
   import Search from './pages/samples/Search.svelte'
   import Select from './pages/samples/Select.svelte'
-  import SkeletonPlaceholder from './pages/samples/SkeletonPlaceholder.svelte'
-  import SkeletonText from './pages/samples/SkeletonText.svelte'
+
   import Slider from './pages/samples/Slider.svelte'
   import StructuredList from './pages/samples/StructuredList.svelte'
   import Tabs from './pages/samples/Tabs.svelte'
@@ -72,14 +69,14 @@
     '/Breadcrumb': Breadcrumb
     '/Button': Button
     '/Checkbox': Checkbox
-    '/Codesnippet': CodeSnippet
+    '/CodeSnippet': CodeSnippet
     '/ComboBox': ComboBox
     '/ComposedModal': ComposedModal
     '/ContentSwitcher': ContentSwitcher
     '/Copy': Copy
     '/CopyButton': CopyButton
     '/DataTable': DataTable
-    '/DataTableSkeleton': DataTableSkeleton
+
     '/DatePicker': DatePicker
     '/Dropdown': Dropdown
     '/FileUploader': FileUploader
@@ -90,8 +87,8 @@
     '/Icon': Icon
     '/InlineLoading': InlineLoading
     '/Link': Link
-    '/ListBox': ListBox
-    '/ListItem': ListItem
+    #'/ListBox': ListBox
+    #'/ListItem': ListItem
     '/Loading': Loading
     '/Modal': Modal
     '/MultiSelect': MultiSelect
@@ -105,8 +102,7 @@
     '/RadioButtonGroup': RadioButtonGroup
     '/Search': Search
     '/Select': Select
-    '/SkeletonPlaceholder': SkeletonPlaceholder
-    '/SkeletonText': SkeletonText
+
     '/Slider': Slider
     '/StructuredList': StructuredList
     '/Tabs': Tabs

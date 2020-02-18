@@ -1,7 +1,7 @@
 <script lang="coffeescript">
 
 
-  import Account32 from "carbon-icons-svelte/lib/Account32"
+  import Account32 from "../../components/carbon/icons/lib/Account32"
 
 </script>
 <h1>Icon Sizes</h1>
