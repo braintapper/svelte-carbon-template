@@ -1,15 +1,39 @@
 # Svelte Carbon Template
 
 
+## Overview
+
+* Coffeescript
+* Pug
+* Sass
+* Svelte SPA Router
+* IBM Carbon Components
+* Gulp
+* Sugar
+* Svelte Preprocess
+* Svelte
 
 
 ## Installation
 
 ```bash
 degit braintapper/svelte-carbon-template appname
+npm install
 ```
 
+## Shortcuts
 
+To run the dev:
+
+```bash
+svelte
+```
+
+To build:
+
+```bash
+build
+```
 
 
 
