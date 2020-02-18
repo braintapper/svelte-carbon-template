@@ -23,6 +23,14 @@ The components have been curated to remove unnecessary items (i.e., skeletons an
 
 Where useful, new icons will be added.
 
+### Removed Components
+
+* Ordered List
+* Unordered List
+
+### Todo
+
+Styles will be moved out of the stylesheet and into each component.
 
 
 ## Installation

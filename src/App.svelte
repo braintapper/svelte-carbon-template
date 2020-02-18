@@ -36,7 +36,7 @@
   import MultiSelect from './pages/samples/MultiSelect.svelte'
   import Notification from './pages/samples/Notification.svelte'
   import NumberInput from './pages/samples/NumberInput.svelte'
-  import OrderedList from './pages/samples/OrderedList.svelte'
+  # import OrderedList from './pages/samples/OrderedList.svelte'
   import OverflowMenu from './pages/samples/OverflowMenu.svelte'
   import Pagination from './pages/samples/Pagination.svelte'
   import ProgressIndicator from './pages/samples/ProgressIndicator.svelte'
@@ -59,7 +59,7 @@
   import TooltipDefinition from './pages/samples/TooltipDefinition.svelte'
   import TooltipIcon from './pages/samples/TooltipIcon.svelte'
   import UIShell from './pages/samples/UIShell.svelte'
-  import UnorderedList from './pages/samples/UnorderedList.svelte'
+  # import UnorderedList from './pages/samples/UnorderedList.svelte'
 
   # Add more routes below
   routes =
@@ -94,7 +94,7 @@
     '/MultiSelect': MultiSelect
     '/Notification': Notification
     '/NumberInput': NumberInput
-    '/OrderedList': OrderedList
+
     '/OverflowMenu': OverflowMenu
     '/Pagination': Pagination
     '/ProgressIndicator': ProgressIndicator
@@ -117,7 +117,7 @@
     '/TooltipDefinition': TooltipDefinition
     '/TooltipIcon': TooltipIcon
     '/UIShell': UIShell
-    '/UnorderedList': UnorderedList
+    
 
 </script>
 
