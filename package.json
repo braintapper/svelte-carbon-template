@@ -15,7 +15,7 @@
     "gulp-sass": "^4.0.2",
     "js-cookie": "^2.2.1",
     "node-sass": "^4.12.0",
-    "postcss": "^7.0.23",
+    "postcss": "^7.0.36",
     "pug": "^2.0.4",
     "rollup": "^1.20.0",
     "rollup-plugin-livereload": "^1.0.0",
